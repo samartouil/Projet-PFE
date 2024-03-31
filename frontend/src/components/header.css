@@ -1,0 +1,131 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    background-color: #08083c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    border-bottom: 2px solid white;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    
+    
+    
+}
+.header-logo img {
+    margin-right: auto;
+    margin-bottom: auto;
+    max-width: 180px; /* Spécifiez la largeur maximale */
+    max-height: 100px; /* Spécifiez la hauteur maximale */
+    
+}
+.header-menu{
+    display: none;
+}
+.header-menu i{
+    font-style: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    list-style-type: none;
+    margin: 0 12px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+}
+.nav-link:hover{
+    color: var(--main-color);
+   
+}
+.nav-link i{
+    margin-right: 3;
+    font-style: 24px;
+}
+
+.header-right-link{
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: 21px;
+    font-weight: 500;
+    background-color:#d0a530;
+    color:white ;
+    border-radius: 15px;
+    padding: 5px 10px;
+
+}
+.header-right-link:hover{
+    background-color: var(--main-color);
+}
+.header-right-link i{
+    margin-right: 5px;
+}
+/*Media Queries*/
+@media( max-width: 990px){
+    .header-left{
+        flex-direction: row-reverse;
+        margin-right: 20px;
+    }
+    .header-menu{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: #08083c;
+        transition: all .7s ease-in-out;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+    }
+    .nav-links{
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       padding-left: 30px; 
+    }
+    .nav-link{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 520px){
+    .header{
+        padding: 0 10px;
+    }
+    .header-logo img{
+        max-width: 90px; /* Spécifiez la largeur maximale */
+        max-height: 50px;
+    }
+    .header-right-link{
+        font-style: 17px;
+        padding: 5px 7px;
+    }
+    .header-menu{
+        margin-right: 10px;
+    }
+
+}

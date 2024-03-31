@@ -1,0 +1,33 @@
+.home-hero-header{
+    background: url(../../images/homepage.jpg);
+    background-size:cover ;
+    background-position: center 70%; 
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.home-hero-header-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 135%;
+    
+}
+.home-title{
+    font-style: 40px;
+    background-color: var(--main-color);
+    padding: 10px 17px;
+    border-radius: 21px;
+    color: var(--dark-color);
+    border: 3px solid var(--green-color);
+}

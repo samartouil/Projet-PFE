@@ -1,0 +1,134 @@
+.dashboard{
+    padding-top: 110px;
+    display: flex;
+}
+
+.dashboard-sidebar{
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 130px;
+    border-right: 1px solid var(--gray-color);
+}
+.dashboard-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    display: block;
+    
+    text-align: center;
+}
+.dashboard-title i{
+    margin-right: 5px;
+    color: var(--green-color);
+
+
+}
+.dashboard-list{
+   padding: 5px; 
+   padding-left: 7px;
+}
+.dashboard-sidebar-link{
+    color: var(--secondary-color);
+    font-style: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: block;
+}
+.dashboard-sidebar-link i{
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+
+
+
+.dashboard-main{
+    padding-left: 200px;
+    width: 100%;
+   
+   
+}
+
+.mainheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--gray-color);
+}
+
+.main-card{
+    border: 2px solid var(--gray-color);
+    width: 22%;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius:10px ;
+}
+.card-title{
+    font-style: 21px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.card-count{
+    color: var(--red-color);
+    font-style: 24px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.card-link-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-link{
+    font-size: 17px;
+    background-color: var(--green-sea-color);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.card-icon{
+width: 35px;
+height: 35px;
+background-repeat: 10px;
+background-color: var(--secondary-color);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+color: var(--white-color);
+}
+
+@media (max-width:1200px){
+    .main-card{
+        width: 44%;
+    }
+}
+@media (max-width:990px){
+    .dashboard-sidebar{
+        display:none;
+    }
+    .main-card{
+        width:max-content;
+    }
+   
+
+}
+@media (max-width:520px){
+    .main-card{
+        width: 100%;
+    }
+    
+}

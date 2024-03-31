@@ -1,0 +1,40 @@
+.options{
+    width: 100%;
+    max-width: 1024px;
+    height: 1000px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+   
+    top: 0;
+    left:0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .option{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    flex:1
+  }
+  
+  .optionImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  .optionTitle{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    color: black;
+    text-decoration: underline;
+  }
