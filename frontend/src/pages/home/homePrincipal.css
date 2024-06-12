@@ -1,0 +1,182 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 700px;
+}
+
+.background-image {
+    position: relative;
+  top:10%;
+    left: 10;
+    margin-left: 10px;
+    width: 60%;
+     height: 500px;
+    box-shadow: 0 0 10px rgba(18, 17, 22, 0.5);
+    border-radius: 5px;
+    transition: opacity 0.7s ease-in-out; /* Transition pour le fondu */
+margin-top: 9.5%;
+}
+.background-overlay {
+    position: absolute;
+    margin-top: 9.4%;
+    top: 0;
+    left: 0;
+    width: 60.8%;
+    height: 26.3%;
+    background-color: rgba(251, 248, 248, 0.651); /* Couleur de fond semi-transparente */
+}
+
+
+
+.home-hero-header-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.home-content {
+    position: absolute;
+    bottom: 20px; /* Ajustez la position verticale selon votre design */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+   
+    top: 145px;
+}
+
+
+.home-title {
+    position: absolute;
+    top: 20%; /* Centrez le titre verticalement */
+    left: 36%; /* Centrez le titre horizontalement */
+    transform: translate(-50%, -50%); /* Centrez le titre exactement au milieu */
+    font-size: 40px;
+    color: #ffffff; /* Couleur du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+    animation: animateTitle 3s infinite alternate; /* Animation du titre */
+    padding: 20px;
+    transition: color 2s ease;
+   
+}
+@keyframes animateTitle {
+    from {
+        color: rgb(19, 18, 18); /* Couleur du texte intense au début de l'animation */
+    }
+    to {
+        color: rgba(255, 255, 255, 0.5); /* Couleur du texte un peu transparent à la fin de l'animation */
+    }
+}
+
+.features-section {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px 0; /* Ajustez l'espacement selon vos besoins */
+    background-color: #edeef0; /* Couleur de fond de la nouvelle section */
+    text-align:left;
+    text-shadow: 2px 2px 4px rgba(16, 16, 19, 0.5); /* Ombre du texte */
+    box-shadow: 0 0 10px rgba(18, 17, 22, 0.2);
+}
+
+.section-title {
+    font-size: 30px;
+    color: #0e0e17; /* Couleur du texte */
+    margin-bottom: 30px; /* Ajustez l'espacement entre le titre et le contenu */
+    margin-left: 40px;
+ 
+   
+    
+}
+.feature-boxes {
+    display: flex;
+    justify-content: space-around;
+    padding: 3px;
+    width: 100%;
+  }
+  
+  .feature-box {
+    width: 70%; /* Ajustez la largeur en fonction de vos besoins */
+    text-align: center;
+    margin-bottom: 60px; /* Espacement entre les boîtes de fonctionnalités */
+}
+  
+ 
+.feature-image {
+    width: 70%; /* Ajustez la largeur de l'image selon vos besoins */
+    height: auto; /* La hauteur sera ajustée automatiquement pour conserver les proportions */
+    border-radius: 20px; /* Ajoutez des coins arrondis à l'image si nécessaire */
+    /* Ajoutez d'autres styles au besoin */
+}
+
+  
+
+.feature-box:nth-child(1) .feature-title {
+ 
+   left: 192px;
+   word-wrap: break-word;
+   font-size: 20px;
+}
+
+.feature-box:nth-child(2) .feature-title {
+    left: 530px;
+    font-size: 20px;
+}
+
+.feature-box:nth-child(3) .feature-title {
+    left: 890px;
+    font-size: 20px;
+}
+
+ 
+
+
+.about-us-section {
+    margin-top: 590px; /* Espacement en haut */
+    padding: 20px; /* Espacement interne */
+    background-color: #e0efd1; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Ombre légère */
+    width: 45%;
+    height: 60vh;
+ margin-left: 3%;
+
+}
+
+.about-us-section h2 {
+    font-size: 24px; /* Taille de police pour le titre */
+    color: #333333; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+.about-us-section p {
+    font-size: 16px; /* Taille de police pour le texte */
+    color: #666666; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne */
+  
+}
+.about-us-image {
+    position: absolute;
+    top: 65%;
+    right: 0;
+    margin-right: 30px;
+    width: 45%; /* Ajustez la largeur de l'image selon vos besoins */
+    height: 24%;
+    box-shadow: 0 0 10px rgba(18, 17, 22, 1);
+    border-radius: 5px;
+    transition: opacity 0.7s ease-in-out; /* Transition pour le fondu */
+}

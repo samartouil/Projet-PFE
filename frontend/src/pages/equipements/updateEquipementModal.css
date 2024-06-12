@@ -1,0 +1,70 @@
+.update-equipment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond avec transparence */
+    z-index: 999; /* Assurez-vous que le modal est au-dessus des autres éléments */
+    display: flex;
+    align-items: center; /* Aligner le contenu au centre */
+    justify-content: center; /* Centrer le contenu */
+    margin-top: 53px;
+}
+
+.update-equipment-form {
+    width: 700px; 
+    background-color: white; 
+    padding: 15px; 
+    display: flex;
+    flex-direction: column; /* Agencement vertical */
+    position: relative; /* Positionnement relatif pour le bouton de fermeture */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.update-equipment-form-close {
+    position: absolute;
+    top: 10px; /* Position du bouton de fermeture */
+    right: 10px; /* Position du bouton de fermeture */
+    color: #ff0000; /* Couleur rouge */
+    cursor: pointer; /* Changer le curseur sur hover */
+    font-size: 30px; /* Taille de l'icône */
+}
+
+.update-equipment-title {
+    text-align: center; /* Centrer le titre */
+    font-size: 24px; /* Taille de la police */
+    color: #3498db; /* Couleur du texte */
+}
+
+.update-equipment-form input,
+.update-equipment-form textarea,
+.update-equipment-form select {
+    border-radius: 10px; /* Coins arrondis */
+    font-size: 18px; /* Taille de la police */
+    padding: 5px; /* Espacement intérieur */
+    margin: 10px 0; /* Espacement vertical entre les champs */
+    border: 1px solid #ccc; /* Bordure grise */
+}
+
+.update-modal-equipment-btn {
+    background-color: #2980b9; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    font-size: 18px; /* Taille de la police */
+    border: none; /* Pas de bordure */
+    padding: 12px; /* Espacement intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    cursor: pointer; /* Changer le curseur sur hover */
+    text-align: center; /* Centrer le texte */
+    margin-top: 15px; /* Espacement par rapport aux autres éléments */
+}
+
+.update-modal-equipment-btn:hover {
+    background-color: darkblue; /* Couleur du bouton au survol */
+}
+
+@media (max-width: 820px) {
+    .update-equipment-form {
+        width: 90%; /* Réduction de la largeur sur les écrans plus petits */
+    }
+}

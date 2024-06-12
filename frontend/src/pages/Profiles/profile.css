@@ -1,24 +1,31 @@
 .profile{
     padding: 150px;
-    position:absolute;
-    height: 0%;
+    padding-top: 120px;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 1;
 
 }
-
+.profile h2 {
+    color: #333;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px; /* Ajuster l'espacement en dessous du titre */
+  }
 
 .profile-header {
     display:flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-color:rgb(69, 62, 62);
+    background-color:rgb(166, 166, 166);
     border-radius: 40px;
     padding: 40px;
     height: 550px;
     text-align: center;
     margin-top: 0px;
+    box-shadow: 0 0 10px rgba(18,17, 22,1);
+    
 
 }
 
@@ -30,7 +37,7 @@
 
 }
 
-.profile-info input {
+.profile.profile-info input {
     margin-bottom: 110px;
     padding: 1px;
     border: 1px solid #ccc;
@@ -55,6 +62,7 @@
     height: 120px;
     position:relative;
     text-align:center;
+    flex-wrap: wrap;
 }
 
 .profile-image {
@@ -72,8 +80,8 @@
     border-radius: 50%;
     padding: 0 5px;
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: -5px;
+    right: -5px;
     margin: auto;
     width: max-content;
     cursor: pointer;
@@ -86,13 +94,9 @@
     font-size: 14px; /* Correction de la propriété */
     font-weight: bold;
     color: var(--dark-color);
-    right: -85px;
+    right: -70px;
 }
-.profile-username {
-    font-style: 30px;
-    color: rgb(162, 169, 125);
-    margin: 10px 0;
-}
+
 
 .profile-details {
     display: flex;
@@ -105,8 +109,8 @@
 .profile-info-column {
     width: calc(80% - 20px);
     max-width: 700px; /* Ajustez la largeur maximale selon vos besoins */
-    margin: 10px;
-    padding: 1px;
+    margin: 32px;
+    padding: 5px;
     border: 1px solid #0e0e0a;
     border-radius: 9px;
     background-color: #f8f8f3;
@@ -132,7 +136,7 @@
 }
 
 .profile-update-btn {
-    font-style: 21px;
+    font-size: 21px;
     font-weight: 500;
     background-color: rgb(237, 228, 50);
     color: rgb(5, 5, 5);
@@ -148,10 +152,25 @@
     background-color: darkgreen;
 }
 
+.Toastify__toast{
+    margin-top: 90px !important;
+}
+
 @media (max-width: 990px) {
     .profile-info{
         width: 100%;
         
+    }
+    .upload-profile-photo-btn {
+        position: relative;
+        bottom: auto; /* Reset de la propriété bottom */
+        right: auto; /* Reset de la propriété right */
+        margin-top: 10px; /* Espace entre l'image et le bouton */
+        /* Centrer le bouton sous l'image */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 }
 
@@ -162,5 +181,16 @@
 
     .profile-header {
         padding: 10px;
+    }
+    .upload-profile-photo-btn {
+        position: relative;
+        bottom: auto; /* Reset de la propriété bottom */
+        right: auto; /* Reset de la propriété right */
+        margin-top: 10px; /* Espace entre l'image et le bouton */
+        /* Centrer le bouton sous l'image */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 }

@@ -1,0 +1,81 @@
+.project-list-section {
+    padding-top: 86px;
+    padding-right: 100px;
+    padding-left: 350px;
+    width: 100%;
+  }
+  
+  .project-list-section .title-projet {
+    text-align: center;
+    color: #333; 
+    font-size: 35px; 
+    margin-bottom: 25px;
+  }
+  
+  .project-list-section .search-bar {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    margin-bottom: 20px; /* Espacement par rapport au contenu */
+  }
+  
+  .project-list-section .search-bar input {
+    padding: 5px; /* Espacement intérieur */
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    margin-right: 10px; /* Espacement entre le champ de recherche et le bouton */
+  }
+  
+  .project-list-section .search-bar button {
+    padding: 6px 12px; /* Espacement du bouton */
+    background-color: #4e6955; /* Couleur du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    color: white; 
+    cursor: pointer; /* Changer le curseur au survol */
+  }
+  
+  .project-list-section .search-bar button:hover {
+    background-color: #2980b9; /* Couleur au survol */
+  }
+  
+  .project-list-section .project-container {
+    display: grid; /* Utilisation de la grille comme equipement-list */
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 30px; /* Espacement entre les éléments */
+  }
+  
+  .project-list-section .project {
+    background-color: white; /* Fond blanc */
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(18, 17, 22, 0.3); /* Ombre légère */
+  }
+  
+  .project-list-section .project h3 {
+    font-size: 24px; /* Taille du texte */
+    color: #333; 
+    padding-bottom: 3px;
+  }
+  
+  .project-list-section .project p {
+    font-size: 16px; /* Taille du texte */
+    color: #555; 
+    padding-bottom: 6px;
+  }
+  
+  .project-list-section .view-more-button {
+    text-decoration: none; 
+    color: white; 
+    background-color: #ced688; /* Couleur du bouton */
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block; /* Pour que le lien apparaisse comme un bouton */
+    
+  }
+  
+  .project-list-section .view-more-button:hover {
+    background-color: #2980b9; /* Couleur au survol */
+  }
+  

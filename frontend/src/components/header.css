@@ -10,7 +10,13 @@
     align-items: center;
     justify-content: space-between;
     z-index: 99;
-    border-bottom: 2px solid white;
+    box-shadow: 0 0 10px rgba(18,17, 22,1);
+}
+
+
+header .header-right{
+    display: flex;
+    align-items: center;
 }
 
 .header-left{
@@ -55,7 +61,7 @@
     color: white;
 }
 .nav-link:hover{
-    color: var(--main-color);
+    color: #d0a530;
    
 }
 .nav-link i{
@@ -64,21 +70,138 @@
 }
 
 .header-right-link{
+    display: flex;
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-style: 21px;
     font-weight: 500;
     background-color:#d0a530;
     color:white ;
     border-radius: 15px;
-    padding: 5px 10px;
+    padding: 7px 7px;
 
 }
 .header-right-link:hover{
     background-color: var(--main-color);
 }
-.header-right-link i{
+
+
+.header-right-user-photo{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    font-size: 22px;
     margin-right: 5px;
+
+}
+
+.header-right-username{
+    font-style: 21px;
+    font-weight: 500;
+    color : var(--main-color);
+    margin-right: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 7px;
+}
+.bell-icon {
+    font-size: 30px; /* Agrandir la taille de l'icône de la cloche */
+    color: #ffffff; /* Changer la couleur de l'icône */
+    margin-right: 15px; /* Marge à droite pour l'espace */
+}
+
+.notification-dot {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    
+}
+
+.notification-dot.active {
+    display: block;
+}
+.header-equipment-list {
+    position: fixed;
+    top: 100px; 
+    right: 0;
+    min-width: 350px;
+    background-color: #08083c; 
+    padding: 20px;
+    
+    z-index: 98; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: 0 0 5px rgb(159, 158, 161);
+   
+}
+
+.header-equipment-list ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.header-equipment-list li {
+    margin-bottom: 15px; 
+    
+}
+
+.header-equipment-list h3 {
+    margin-bottom: 30px; 
+}
+
+.header-equipment-list li  .header-equipment-info {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.header-equipment-list .header-equipment-name {
+    font-weight: bold; 
+}
+
+.notification {
+    margin-bottom: 10px; 
+}
+
+
+.header-platform-list {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: absolute;
+    top: 100%; /* Position below the header */
+    right: 520px; /* Adjust the positioning */
+    width: 200px; /* Adjust the width as needed */
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+
+
+.platform-item {
+    padding: 8px 0; 
+    font-size: 16px; 
+    color: #666; 
+    transition: color 0.3s ease; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.platform-item:last-child {
+    border-bottom: none; 
+}
+
+.platform-item:hover {
+    color: #007bff; 
 }
 /*Media Queries*/
 @media( max-width: 990px){

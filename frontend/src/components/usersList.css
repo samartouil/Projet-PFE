@@ -1,0 +1,90 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px; /* Ajout de rembourrage */
+  background-color: #f9f9f9; /* Fond léger */
+  border-radius: 10px; /* Bords arrondis */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); /* Ombre */
+  margin-top: 120px;
+}
+
+.container-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Réduit l'espace entre le titre et le tableau */
+  color: #333;
+  text-align: center; /* Centrer le titre */
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0; /* Supprime les espaces entre les cellules */
+  background-color: #ffffff;
+  border-radius: 10px; /* Bords arrondis pour le tableau */
+  overflow: hidden; /* Assure que les coins sont arrondis même pour les cellules */
+}
+
+.user-table-header {
+  padding: 12px 15px;
+  text-align: left;
+  background-color: #154913; /* Vert pour les en-têtes */
+  color: white; /* Texte blanc */
+  font-weight: bold;
+}
+
+.role-select {
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+
+.user-table-data {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.filter-title{
+  font-weight: bold;
+}
+
+.user-table-row:nth-child(even) {
+  background-color: #f2f2f2; /* Couleur alternée pour les lignes */
+}
+
+.user-table-row:hover {
+  background-color: #ddd; /* Effet de survol */
+  cursor: pointer; /* Curseur pour indiquer que la ligne est interactive */
+}
+
+.activate-button,
+.deactivate-button {
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px; /* Bords arrondis */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transition douce */
+}
+
+.activate-button {
+  background-color: #28a745; /* Vert vif */
+}
+
+.deactivate-button {
+  background-color: #dc3545; /* Rouge vif */
+}
+
+.activate-button:hover {
+  background-color: #218838; /* Vert foncé */
+}
+
+.deactivate-button:hover {
+  background-color: #c82333; /* Rouge foncé */
+}
+
+.button-group {
+  display: flex; /* Pour aligner les boutons sur une ligne */
+  gap: 10px; /* Espace entre les boutons */
+}

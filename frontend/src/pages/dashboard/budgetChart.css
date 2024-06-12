@@ -1,0 +1,39 @@
+/* budgetChart.css */
+
+.budget-chart-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+ 
+
+}
+
+.budget-chart-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles pour l'axe x */
+.apexcharts-xaxis-labels {
+    font-size: 12px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+/* Styles pour l'axe y */
+.apexcharts-yaxis-title {
+    font-size: 14px; 
+    font-weight: bold; 
+}
+
+/* Styles pour le graphique lui-même */
+.apexcharts-canvas {
+    border-radius: 8px; 
+    overflow: hidden; 
+}

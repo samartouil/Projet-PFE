@@ -20,6 +20,11 @@ top: 0;
     width: 500px;
 }
 
+.required {
+    color: red;
+    margin-left: 5px;
+  }
+
 .form-group{
     margin-bottom: 15px;
     display: flex;
@@ -51,6 +56,11 @@ color: var(--secodnary-color);
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 15px;
+}
+.form-footer{
+    margin: 10px 0;
+    font-style: 17px;
+    color: var(--dark-color);
 }
 
 @media (max-width:520px){

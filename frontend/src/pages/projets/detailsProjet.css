@@ -1,0 +1,71 @@
+.container-details {
+    max-width: 800px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #b6aaaa;
+    border-radius: 5px;
+    background-color: #f2f5f6;
+    box-shadow: 0 0 10px rgba(18, 17, 22, 0.3); /* Ombre légère */
+    margin-left: 500px ;
+  }
+  
+  .container-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(110, 160, 143);
+  }
+  
+  .container-details label {
+    display: flex; /* Utiliser Flexbox pour aligner les titres et les champs */
+    align-items: center; /* Aligner les éléments verticalement */
+    font-weight: bold;
+    margin-bottom: 8px;
+    
+  }
+   
+  .container-details .delete-button {
+    color: #931414;
+    
+  }
+  
+  .container-details input[type="text"],
+  .container-details input[type="number"],
+  .container-details textarea,
+  .container-details input[type="date"] {
+    width: 100%; /* Largeur flexible pour tous les champs */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(18, 17, 22, 0.2); /* Ombre légère */
+  }
+  
+  .container-details textarea {
+    height: 100px; /* Ajustez la hauteur selon vos besoins */
+    box-shadow: 0 0 10px rgba(18, 17, 22, 0.3); /* Ombre légère */
+  }
+  
+  .container-details .details-label {
+    width: 30%; /* Largeur fixe pour les titres */
+  }
+  
+  .container-details .details-button {
+    background-color: #a7c586;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+
+
+  }
+  .container-details .details-button:not(:last-child) {
+    margin-right: 10px; /* Ajouter une marge à droite pour tous les boutons sauf le dernier */
+
+  }
+  .container-details .details-button:hover {
+    background-color: #25413f;
+   
+  }

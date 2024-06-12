@@ -1,0 +1,81 @@
+/* manageEmplacements.css */
+
+.manage-emplacements-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-emplacement-btn {
+    margin-bottom: 20px;
+}
+
+.armoires-list {
+    list-style: none;
+    padding: 0;
+}
+
+.armoire-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    color: #0056b3;
+}
+
+.add-emplacement-modal,
+.edit-armoire-modal {
+    .modal-dialog {
+        max-width: 500px;
+    }
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.modal-footer button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+    background-color: #f0f0f0;
+}

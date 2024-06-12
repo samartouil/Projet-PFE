@@ -1,0 +1,55 @@
+/* equipmentUtilizationChart.css */
+
+/* Styles généraux du conteneur du graphique */
+.equipment-utilization-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* Styles spécifiques au graphique d'utilisation des équipements */
+.equipment-utilization-chart {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Styles spécifiques au titre du graphique */
+.equipment-utilization-chart-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles spécifiques à la légende du graphique */
+.equipment-utilization-chart-legend {
+    margin-top: 20px;
+}
+
+/* Styles spécifiques à chaque élément de la légende */
+.equipment-utilization-chart-legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Styles pour les cercles de couleur dans la légende */
+.equipment-utilization-chart-legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Couleurs pour la légende */
+.equipment-utilization-chart-legend-color.color-1 {
+    background-color: #f36;
+}
+
+.equipment-utilization-chart-legend-color.color-2 {
+    background-color: #6f42c1;
+}
+
+/* Ajoutez plus de couleurs au besoin */

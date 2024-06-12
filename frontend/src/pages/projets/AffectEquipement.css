@@ -1,0 +1,167 @@
+/* Styles pour l'overlay du modal */
+.affect-equipement-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Styles pour le contenu du modal */
+  .affect-equipement-modal {
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 20px;
+    max-width: 90vw; /* Limite la largeur pour autoriser le défilement horizontal */
+    max-height: 80vh; /* Limite la hauteur */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+    overflow-x: auto; /* Permet le défilement horizontal */
+  }
+  
+  /* Style pour le titre du modal */
+  .affect-equipement-modal .modal-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  /* Section pour la sélection du projet */
+  .affect-equipement-modal .project-selection {
+    margin-bottom: 20px;
+  }
+  .affect-equipement-modal select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    outline: none; /* Pas de contour bleu */
+  }
+  
+  /* Section pour le nombre d'équipements */
+  .affect-equipement-modal .number-of-equipments {
+    margin-bottom: 20px;
+  }
+  
+  /* Disposition des champs de sélection d'équipements avec 3 par ligne */
+  .affect-equipement-modal .equipment-selection-dispo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+    gap: 20px; /* Espacement entre les champs */
+  }
+  
+  /* Section pour les champs d'équipements */
+  .affect-equipement-modal .equipment-selection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .affect-equipement-modal .equipment-selection label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .affect-equipement-modal .multi-select-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .affect-equipement-modal .multi-select-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .affect-equipement-modal .multi-select-input .selected-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .affect-equipement-modal .multi-select-input .selected-option {
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .affect-equipement-modal .multi-select-input .remove-option {
+    color: red;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .affect-equipement-modal .multi-select-input .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .affect-equipement-modal .multi-select-input .suggestion {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .affect-equipement-modal .multi-select-input .suggestion:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Styles pour les boutons */
+  .affect-equipement-modal .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .affect-equipement-modal .modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .affect-equipement-modal .modal-buttons button:first-child {
+    background-color: #28a745; /* Vert pour le bouton de soumission */
+    color: white;
+  }
+  
+  .affect-equipement-modal .modal-buttons button:first-child:hover {
+    background-color: darkgreen; /* Couleur au survol */
+  }
+  
+  .affect-equipement-modal .modal-buttons button:last-child {
+    background-color: #dc3545; /* Rouge pour le bouton d'annulation */
+    color: white;
+  }
+  
+  .affect-equipement-modal .modal-buttons button:last-child:hover {
+    background-color: darkred;
+  }
+  
+  .modal-eq-content{
+    Background-color: #f9f9f9;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }

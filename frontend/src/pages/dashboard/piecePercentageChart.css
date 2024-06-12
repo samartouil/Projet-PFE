@@ -1,0 +1,52 @@
+/* piecePercentageChart.css */
+
+.chart-container {
+    width: 100%;
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 110px;
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.apexcharts-canvas {
+    width: 100% !important;
+}
+
+.apexcharts-tooltip {
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.apexcharts-tooltip-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.apexcharts-tooltip-marker {
+    border-color: rgba(0, 0, 0, 0.7);
+}
+
+.apexcharts-tooltip-y-group {
+    margin-bottom: 5px;
+}
+
+.apexcharts-tooltip-y-value {
+    font-weight: bold;
+}
+
+.apexcharts-legend-text {
+    font-size: 14px;
+}

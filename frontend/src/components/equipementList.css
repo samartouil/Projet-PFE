@@ -1,0 +1,206 @@
+.equipment-list {
+  margin-left: 26px;
+  padding-top: 29px;
+  padding-right: 90px;
+  padding-left: 60px;
+  /* background-color: #dfe0e4; */
+  width: 100%;
+  /*background-color: #dfe0e4;*/
+  }
+  
+  .equipment-list h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 35px;
+    text-align: center;
+  }
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .box {
+    background-color: #9ea1cc ;
+    padding: 20px;
+    width: 300px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    box-shadow: 0 0 10px rgba(18,17, 22,0.5);
+  }
+  .box span {
+    font-size: 18px;
+    margin-left: 10px; 
+  }
+  .boxH span {
+    font-size: 18px;
+    margin-left: 10px; 
+  }
+  .boxC span {
+    font-size: 18px;
+    margin-left: 10px; 
+  }
+  .boxH {
+    background-color: #c20909 ;
+    padding: 20px;
+    width: 300px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    box-shadow: 0 0 10px rgba(18,17, 22,0.5);
+  }
+  .boxC {
+    background-color: #585c57 ;
+    padding: 20px;
+    width: 300px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    box-shadow: 0 0 10px rgba(18,17, 22,0.5);
+  }
+  
+  
+  .equipment-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Diviser en deux colonnes */
+    gap: 20px;
+  }
+  
+  .equipment-list li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(18,17, 22,0.3);
+  }
+  
+  .equipment-list li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .equipment-list li a:hover {
+    background-color: #dadada;
+  }
+  
+  .equipment-list li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .equipment-list li div {
+    flex-grow: 1;
+  }
+
+  .validation-button {
+    margin-left: auto;
+    background-color: #28a745; /* Couleur verte pour la validation */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .validation-button:hover {
+    background-color: darkgreen; 
+  }
+  
+  .not-valid-button {
+    margin-left: auto;
+    background-color: #f0ad4e; /* Couleur orange pour le statut non validé */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: not-allowed; 
+    display: flex;
+    align-items: center;
+    width: 97px;
+  }
+  
+  .not-valid-button:hover {
+    background-color: #e0862f;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-bottom: 20px; 
+}
+
+  .search-bar select {
+    padding: 2px;
+    justify-content: flex-end;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.btnArmoire{
+  padding: 2px;
+    justify-content: flex-end;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+.searchOp{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+  width: 300px;
+}
+
+.pagination-button {
+  background: transparent; 
+  border: none;
+  color: #555; 
+  padding: 8px;
+  margin: 0 5px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+.pagination-button:hover {
+  color: #333; 
+}
+
+.pagination .active {
+  color: #3498db; 
+  border-bottom: 2px solid #3498db;
+}
+
+.pagination .active:hover {
+  color: #2980b9;
+}
+
+ .delete-button {
+  color: #931414;
+  
+}

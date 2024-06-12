@@ -1,17 +1,12 @@
 .options{
-    width: 100%;
-    max-width: 1024px;
-    height: 1000px;
-    margin-left: 250px;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    z-index: 1;
-   
-    top: 0;
-    left:0;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 400px;
+  margin-top: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 115px;
   }
   
   .option{
@@ -19,7 +14,7 @@
     color: white;
     border-radius: 10px;
     overflow: hidden;
-    height: 250px;
+    height: 270px;
     flex:1
   }
   
